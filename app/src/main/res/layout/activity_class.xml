@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="5dp"
+    card_view:contentPadding="5dp"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardMaxElevation="5dp"
+    android:layout_margin="8dp"
+
+    >
+    <ImageView
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "@drawable/gradient"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:id="@+id/parent_layout">
+
+        <TextView
+            android:id="@+id/Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Question: "
+            android:padding="8dp"
+            android:textColor="#222"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:typeface="monospace"  />
+
+        <TextView
+            android:id="@+id/ShowQuestionTextView"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textColor="#444"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/Question"
+            android:layout_toEndOf="@+id/Question"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:singleLine = "true"/>
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer: "
+            android:layout_below="@+id/Question"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="8dp"
+            android:textColor="#222"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/ShowNamesTextView"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ShowQuestionTextView"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#444"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

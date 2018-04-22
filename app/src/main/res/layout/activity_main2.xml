@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qnmd.Main2Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:background="#79ffff90">
+
+        <Button
+            android:id="@+id/fail"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/round"
+            android:textColor="#878419"
+            android:layout_margin="10dp"
+            android:text="FailList" />
+        <Button
+            android:id="@+id/allStudentList"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round"
+            android:textColor="#878419"
+            android:text="All students list"
+            android:layout_margin="10dp"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/LecturerRating"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:text="Lecturer Rating"
+            android:background="@drawable/round"
+            android:textColor="#878419"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_below="@id/fail"
+            />
+
+        <Button
+            android:id="@+id/broadCast"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:textColor="#878419"
+            android:text="BroadQ Winner"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:background="@drawable/round"
+            android:layout_below="@id/allStudentList"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+
+
+</android.support.constraint.ConstraintLayout>

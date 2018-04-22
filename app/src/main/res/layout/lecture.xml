@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qnmd.LecturerRating"
+
+    android:background="#79ffff90">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructor name:"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:id="@+id/lec"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id= "@+id/Iname"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/lec"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AAA"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:text="Clarity:"
+        android:layout_below="@+id/Iname"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clarityRating"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/AAA"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BBB"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:text="Meaningful:"
+        android:layout_below="@+id/clarityRating"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MeaningfulRating"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/BBB"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CCC"
+        android:text="Relavant:"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/MeaningfulRating"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:id="@+id/RelavantRating"
+        android:layout_below="@+id/CCC"
+        />
+</RelativeLayout>

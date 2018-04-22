@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qnmd.WorkActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Reply to Questions"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop = "true"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TV1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/reply"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/Question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/edit_style1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:hint="Enter Reply"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/DisplayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/reply"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/show_all"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:background="@drawable/rect"
+        android:theme="@style/ButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_above="@+id/Back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Submit"
+        android:theme="@style/ButtonStyle" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:theme="@style/ButtonStyle"
+
+        />
+
+
+
+</RelativeLayout>
